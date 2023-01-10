@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title> index</title>
+<!--meta tags-->
+<meta charset="utf-8" />
+<meta name="description" content="Web Development" />
+<meta name="keywords"    content="HTML and CSS" />
+<meta name="author"      content="Ravihara" />
+
+<!--links for css and js files-->
+<link href = "css/order.css" rel = "stylesheet" />
+<script src="js/order.js"></script>
+</head>
+<!--background image-->
+<body class="bg1.jpg"> 
+
+    <header>
+    
+    
+    
+    </header>
+    
+    <nav>
+        
+       
+    <!--links for each web pages-->
+    <a href = "index.html"> Home</a>
+    <a href = "register.html"> Register</a>
+    <a href = "order.html" id="navcurrent">Order Now </a>
+    <a href = "features.html">Features</a>
+    
+    
+    </nav>
+
+    <main>
+      <div id="article1">
+<!--html form-->
+        <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" id="orform">
+          <h2>ORDER HERE</h2><br>
+          <!--get the pizza type-->
+           Select your pizza here <select name = "dropdown2">
+                <option value = "Hot garlic" selected>Hot Garlic Prawns</option>
+                <option value = "chicken bacon" >Chicken Bacon</option>
+                <option value = "hot butter" >Hot Butter Cuttlefish</option>
+                <option value = "Tandoori chicken" >Tandoori Chicken</option>
+                <option value = "ultimate chicken">The Ultimate Chicken Treat</option>
+                <option value = "meat lovers" >Meat Lovers - Chicken</option>
+                <option value = "spicy seafood" >Spicy Seafood</option>
+                
+              </select><br><br>
+
+           Size<select name="dropdown1">
+                <option value = "small" >Small</option>
+                <option value = "medium" >Medium</option>
+                <option value = "large" >Large</option>
+              </select><br>
+                <!--text area-->
+               <label for="quantity">Quantity</label>
+                <input id="quantity" type="number" name="quantity" /><br><br>
+              
+       <!--get the delivery type-->
+             Delivery or Pick up<br>
+                <input id="deli" type ="radio" name = "dtype" value ="delivery">HOME DELIVERY
+                <input id="pick" type ="radio" name = "dtype" value ="pickup" onclick= "disableElement ()">PICK UP
+                <br><br>
+
+                
+
+               <!--getting inputs from user-->
+
+                <label for="baddress">Billing Address</label>
+                <input id="baddress" type="text" name="baddress" /><br>
+
+                <fieldset id="paymethod">
+                Is Delivery address same as Billing address?
+                <select id="sameaddress">
+                  <option value ="NO" selected >NO</option>
+                  <option value = "yes">Yes</option>
+                  </select>
+                  <br>
+
+                  
+                  
+                  <label for="daddress">Delivery Address</label>
+                <input id="daddress" type="text" name="daddress" /><br>
+ 
+                <label for="post">POST Code</label>
+                <input id="post" type="text" name="post"  /><br><br>
+                    </fieldset>
+              
+
+                <label for="email">E mail</label>
+                <input id="email" type="email" name="email"  /><br><br>
+
+                <label for="mnumber">Mobile Number</label>
+                <input id="mnumber" type="number" name="mnumber" /><br><br>
+<!--get the payment method-->
+                Pay On?<br>
+                <input id="pickk" type ="radio" name = "ptype" value ="paypick" onclick= "disableElement1 ()">Pick up
+                <input id= "onl" type ="radio" name = "ptype" value ="online">Online<br><br>
+<!--get the card details-->
+                <fieldset id= "hidepay">
+                <input type ="radio" name = "card" value ="visa">Visa
+                <input type ="radio" name = "card" value ="mcard">Master card
+                <input type ="radio" name = "card" value ="americanexpress">American Express
+                <br><br>
+
+                <label for="ccn">CreditCard No</label>
+                <input id="ccn" type="text" name="card no"  /><br><br>
+
+                <label for="ccp">Security Code</label>
+                <input id="ccp" type="password" name="card password"  /><br><br>
+                  </fieldset>
+              <br>
+              <!--submit the form-->
+                <input type = "submit" name="Confirm" value = "Confirm"> 
+        </form>
+      </div>
+        </main>
+        <footer>
+          <p>DO YOU WANT TO BECOME A MEMBER</p>
+          <a href ="register.html">REGISTER NOW</a> <hr>
+          <p>Bruno_Pizzeria@gmail.com | All rights reserved | Website by Ravihara De Silva</p>
+          
+      </footer>
+      </body>
+      </html>

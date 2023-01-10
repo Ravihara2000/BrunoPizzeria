@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title> index</title>
+
+<!--Meta tags-->
+<meta charset="utf-8" />
+<meta name="description" content="Web Development" />
+<meta name="keywords"    content="HTML and CSS" />
+<meta name="author"      content="Ravihara" />
+
+<!--links of css and java script files-->
+<link href = "css/register.css" rel = "stylesheet" />
+<script src ="js/register.js"></script>
+</head>
+
+<body > 
+
+    <header>
+    
+    
+    
+    </header>
+    <!--begin of Navigation area-->
+    <nav>
+      <!--links for each pages-->
+        
+    <a href = "index.html"> Home</a>
+    <a href = "register.html" id="navcurrent"> Register</a>
+    <a href = "order.html">Order Now </a>
+    <a href = "features.html">Features</a> 
+    
+
+    </nav>
+
+    <main>
+       
+        <div id="article1">
+<br>
+<!--form id and mercury url-->
+            <form method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php" id ="detailsform">
+                <h2>BECOME A MEMBER</h2><br>
+                
+               
+                <!--text areas for collect informations-->
+               <label for = "fname"> First Name </label>
+                     <input type = "text" name ="fname" id = "fname" > <br><br>
+                   
+                  <label for = "lname"> Last Name </label> 
+                    <input type = "text" name="lname" id = "lname" > <br><br>
+                
+            <input type = "radio" name= "gender" value = "male">Male
+                    <input type = "radio" name= "gender" value = "female">Female
+        
+                   <br><br>
+                   <!--dropdown list-user can choose their fvorite pizza-->
+                  Select Your Favorite One <br><br>
+                        <input type="checkbox" name =hot_garlic value = hot_garlic>HOT GARLIC PRAWNS<br>
+                        <input type="checkbox" name="chicken_bacon" value="chicken_bacon">CHICKEN BACON<br>
+                        <input type="checkbox" name="hotbuttercuttlefish" value="hotbuttercuttlefish">HOT BUTTER CUTTLEFISH<br>
+                        <input type="checkbox" name="TandooriChicken" value="TandooriChicken">TANDOORI CHICKEN<br>
+                        <input type="checkbox" name="UltimateChicken" value="UltimateChicken">THE ULTIMATE CHICKEN TREAT<br>
+                        <input type="checkbox" name="MeatLovers" value="meatLovers">MEAT LOVERS CHICKEN<br>
+                        <input type="checkbox" name="spicysea" value="spicysea">SPICY SEAFOOD<br>
+                     
+                    
+                      
+                        <br><br>
+                       
+                    <!--ask the email from user-->
+                     E-mail <input type= "email" placeholder="xxxxx@gmail.com" name="email" id="email"><br><br>
+                      
+                     <!--ask the password from user-->
+                       <label for="pwd1">Password</label>
+                    <input id="pwd1" type="password" name="pwd1" />
+                            <br><br>
+                            <!--again ask the password from user to confirm -->
+                    
+                      <label for="pwd2">Retype Password</label>
+                    <input id="pwd2" type="password" name="pwd2" />
+                    
+                    <br><br><br>
+                   
+                   
+                        <!--submit and reset buttons-->
+                    <input type = "submit" name="submit" value = "submit"> 
+                    <input type="reset" name="reset" value="reset">
+                    <!--end of the form-->
+    </form>
+                    </div>
+
+                
+    </main>
+<!--footer area(end of the page)-->
+    <footer>
+      <p>DO YOU LIKE TO ORDER NOW</p>
+      <a href ="order.html">ORDER NOW</a> <hr>
+       <p>Bruno_Pizzeria@gmail.com | All rights reserved | Website by Ravihara De Silva</p>
+   
+    </footer>
+
+   </body>
+   </html>
